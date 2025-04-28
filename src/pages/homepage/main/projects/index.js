@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as ReachLink } from "@reach/router";
 import { Box, Stack, Link, forwardRef } from "@chakra-ui/react";
 import { ProjectCard, ProjectInfoCard } from "../../../../components/card";
 import { FaArrowLeft } from "react-icons/fa";
@@ -11,9 +10,7 @@ const BackToMain = () => {
   return (
     <Stack direction="row" spacing={4} align="center">
       <FaArrowLeft />
-      <Link as={ReachLink} to="/">
-        Back To Main
-      </Link>
+      
     </Stack>
   );
 };
